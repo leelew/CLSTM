@@ -1,17 +1,15 @@
-# CLSTM
-Causality-Structured LSTM
+# CLSTM | Causality-Structured LSTM
 [Lu Li](https://www.researchgate.net/profile/Lu-Li-69?ev=hdr_xprf)
-
-### Intro
-We emphasized that this causality is not "true" causality but a "statistic" causality. 
 
 ### Edition
 
-CLSTM has two editions. These two editions have some differences and V2 always perform better than V1 according our preliminary test on soil moisture forecasting. We list the difference of two editions as following:
+CLSTM has two editions. These two editions have some differences on causality test and V2 always perform better than V1 according our preliminary test on soil moisture forecasting. For CLSTM(V1), the causal relations are calculated based on linear correlation/linear and non-linear Granger causality test. For CLSTM(V2), the PGM are calculated by PCMCI(https://github.com/jakobrunge) tests and we grouped the input features with the same causal windows. For each group, we generate CLSTM and give ensemble mean forecast.
 
-1) Different causality test
-For CLSTM(V1), the causal relations are calculated based on linear correlation/linear and non-linear Granger causality test.
-For CLSTM(V2), the causal relations are calculated by PCMCI tests, and generate 
+### Notation
+
+We emphasized two points on CLSTM avoid to mislead readers:
+1) Causality-structure is not "true" causality but a "statistic" causality. 
+2) The improvement of CLSTM may NOT caused by causality information. We think it caused by the exchanged information of deep & shallow features (like predRNN vs ConvLSTM).
 
 ### Citation
 
