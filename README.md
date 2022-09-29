@@ -24,7 +24,8 @@ In case you use CLSTM in your research or work, please cite:
     author = {Lu Li, Yongjiu Dai et al.},
     title = {Causality-Structured Deep Learning for Soil Moisture Predictions},
     journal = {Journal of Hydrometeorlogy},
-    year = {2022}
+    year = {2022},
+    DOI = {10.1175/JHM-D-21-0206.1}
 }
 ```
 
